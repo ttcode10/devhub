@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb://devhubadmin:admin@devhub-shard-00-00-1c3ai.mongodb.net:27017,devhub-shard-00-01-1c3ai.mongodb.net:27017,devhub-shard-00-02-1c3ai.mongodb.net:27017/DevHub?ssl=true&replicaSet=DevHub-shard-0&authSource=admin&retryWrites=true&w=majority",
+  "jwtSecret": "devhubsecret",
+  "githubClientId": "6e844a4a695184dd5d54",
+  "githubSecret": "6f2f853024130fa81be9247771603804f42ef853"
+}
