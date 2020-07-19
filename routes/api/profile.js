@@ -133,7 +133,7 @@ router.get('/user/:user_id', async (req, res) => {
 });
 
 // @route   DELETE api/profile
-// @desc    Get profile by user ID
+// @desc    Delete profile by user ID
 // @access  Public
 router.delete('/', auth, async (req, res) => {
   try {
@@ -212,7 +212,7 @@ router.delete('/experience/:exp_id', auth, async (req, res) => {
     console.log(error.message);
     return res.status(500).send('Server error');
   }
-})
+});
 
 
 // @route   PUT api/profile/education
@@ -248,7 +248,7 @@ router.put('/education', [auth, [
     console.log(error.message);
     return res.status(500).send('Server error');
   }
-})
+});
 
 
 // @route   DELETE api/profile/education/:edu_id
@@ -267,7 +267,7 @@ router.delete('/education/:edu_id', auth, async (req, res) => {
     console.log(error.message);
     return res.status(500).send('Server error');
   }
-})
+});
 
 
 // @route   GET api/profile/github/:username
